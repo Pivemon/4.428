@@ -1,4 +1,4 @@
-# 生日快乐
+# Happy Birthday
 
 <p>
 <img src="https://img.shields.io/github/stars/abandon888/HappyBirthday" alt="stars" />
@@ -8,44 +8,43 @@
 <a href="https://app.netlify.com/sites/friendly-paprenjak-ad64b7/deploys"><img src="https://api.netlify.com/api/v1/badges/39d29171-f3b1-4172-932e-1f657058303a/deploy-status" alt="Netlify Status" /></a>
 </p>
 
-中文｜[English](./README_EN.md)
+[中文](./README.md) | English
 
-以特殊的方式祝某人生日快乐。
+A special way to wish someone happy birthday.
 
-本项目预览页面：<https://friendly-paprenjak-ad64b7.netlify.app/>
+Preview: <https://friendly-paprenjak-ad64b7.netlify.app/>
 
-**项目亮点：**
+## Project Highlights
 
-1. 精心设计的文字动效与浪漫飘逸的气球动画
-2. 通过简单修改`customize.json`文件即可自定义所有文字内容、图片素材、背景音乐及字体样式
-3. 点击页面任意位置都会绽放绚丽的烟花特效
-4. 自动播放优美的背景音乐,营造温馨浪漫的氛围
-5. 使用现代化的 rspack 构建项目，性能更优
+1. Carefully designed text animations and romantic floating balloon animations
+2. Customize all text content, images, background music and font styles by simply modifying the `customize.json` file
+3. Click anywhere on the page to display gorgeous firework effects
+4. Auto-play beautiful background music to create a warm and romantic atmosphere
+5. Built with modern rspack for better performance
 
-## 一些你或许想了解的项目背景
+## Project Background
 
-用于祝福特别的人或者恋人生日快乐，烘托浪漫气氛,关于项目背后的故事，可以看看我的知乎博客文章：[由庆祝生日所想到的——网站背景音乐播放](https://zhuanlan.zhihu.com/p/677636150)
+Used to wish happy birthday to someone special or your lover, creating a romantic atmosphere. For the story behind the project, you can read my Zhihu blog post: [Thoughts on Website Background Music from Birthday Celebrations](https://zhuanlan.zhihu.com/p/677636150)
 
-## 使用方法
+## Usage
 
-fork 本项目，修改 customize.json 文件，将里面的内容替换为你自己的内容，然后在 github pages 或者其它一些托管网站上部署(如 netlify)即可。
-- Vercel 部署
+Fork this project, modify the customize.json file by replacing its contents with your own, then deploy it on github pages or other hosting sites (like netlify).
+- Vercel deploy
 
    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fabandon888%2FHappyBirthday&project-name=happy-birthday)
 
-- Netlify 部署（国内用户推荐，不被墙）
+- Netlify deploy
 
    [![Deploy with NEtlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/abandon888/HappyBirthday)
+> You don't need to create PR to this repository
 
-> 你不需要向本仓库发起 PR
+You can modify text, images, background music, fonts, etc., but there are some things to note:
 
-可以修改文字，图片，背景音乐,字体等，但有一些注意的地方：
-
-1. 仅修改 customize.json 文件，不要修改其它文件，否则可能会导致页面无法正常显示。
-2. 音乐替换时注意重命名为相同名称的音乐文件或注意修改 json 文件中路径，如我这里是`bgMusic.mp3`
-3. 图片替换时生日帽子可能会偏，建议修剪图片尺寸和原图片相同，以确保最佳观赏效果。
-4. 字体替换时修改 json 中 font 配置即可，可采用本地字体或在线字体（如 Google Fonts），项目中已内置`LXGW WenKai`字体文件，可直接使用。同时 font 仅支持一种字体配置。
-  使用示例
+1. Only modify the customize.json file, do not modify other files, otherwise the page may not display properly.
+2. When replacing music, make sure to rename to the same music filename or modify the path in the json file, like `bgMusic.mp3` here
+3. When replacing images, the birthday hat might be offset. It's recommended to crop images to the same size as the original for best viewing effect.
+4. For font replacement, just modify the font configuration in json. You can use local fonts or online fonts (like Google Fonts). The project has built-in `LXGW WenKai` font file ready to use. Note that font only supports one font configuration.
+  Usage example:
 
   ```json
     "fonts": [
@@ -53,7 +52,7 @@ fork 本项目，修改 customize.json 文件，将里面的内容替换为你�
         "name": "Ma Shan Zheng",
         "path": "https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap"
       },
-    //或者使用本地字体，但仅能同时使用一种字体
+    //or use local font, but can only use one font at a time
     // {
     //     "name": "LXGW WenKai",
     //     "path":"./fonts/LXGWWenKai-Regular.ttf"
@@ -61,48 +60,48 @@ fork 本项目，修改 customize.json 文件，将里面的内容替换为你�
     ]
   ```
 
-## 本地开发/预览
+## Local Development/Preview
 
-项目使用 npm 作为包管理器，请确保本地已经配置 node 环境，否则请自行安装，node 环境检验如下：
+The project uses npm as package manager. Make sure you have node environment configured locally, otherwise please install it yourself. Verify node environment as follows:
 
 ```
 $ node -v
 v22.2.1
 ```
 
-然后安装依赖：
+Then install dependencies:
 
 ```
 npm install
 ```
 
-运行：
+Run:
 
 ```
 npm run start
 ```
 
-## 其它
+## Others
 
-整体使用的是纯 HTML、CSS 和 JavaScript，以及 GSAP 来制作动画。
+The overall implementation uses pure HTML, CSS and JavaScript, along with GSAP for animations.
 
-感谢原项目作者的开源，本项目基于[happy-birthday](https://github.com/faahim/happy-birthday) 进行修改。
+Thanks to the original project author for open sourcing. This project is modified based on [happy-birthday](https://github.com/faahim/happy-birthday).
 
-如果你喜欢这个项目，可以给个 star ⭐ 鼓励一下我，谢谢！
+If you like this project, you can give it a star ⭐ to encourage me, thank you!
 
-## 更新日志
+## Changelog
 
-### v2.0（2025-02-03）
+### v2.0 (2025-02-03)
 
-1. 使用 rspack 构建项目
-2. 添加 font 配置支持
-3. 添加烟花特效
-4. 优化音乐播放交互
-5. 更多的可配置项
+1. Use rspack to build project
+2. Add font configuration support
+3. Add firework effects
+4. Optimize music playback interaction
+5. More configurable options
 
 ### v1.0
 
-1. 增加了音乐播放效果
-2. 添加引导页
-3. 中文化
-4. 优化了一些细节
+1. Added music playback effect
+2. Added guide page
+3. Chinese localization
+4. Optimized some details
