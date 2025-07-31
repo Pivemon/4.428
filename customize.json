@@ -23,8 +23,8 @@
   "music": "./music/bgMusic.mp3",
   "fonts": [
     {
-      "name": "Pacifico",
-      "path": "https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      "name": "Ma Shan Zheng",
+      "path": "https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap"
     }
   ]
 }
